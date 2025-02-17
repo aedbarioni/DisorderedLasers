@@ -26,7 +26,7 @@ See the references below for more details.
 
 - `BasinOfAttraction` : This folder contains codes to calculate the average size of the basin of attraction and the convergence score (1 if it converges and 0 if it doesn't) for each perturbed initial condition. 
 
-All codes were tested and run in MATLAB 2024b. To run the codes, download all files in this repository to a folder of your choice and run one of the `main` scripts of your choice. All codes generate/include the required data to run the simulations and optimization; simulations can take a few minutes on a standard laptop.
+All codes were tested and run in MATLAB 2024b. To run the codes, download all files in this repository to a folder of your choice and run one of the scripts of the main folder. All codes generate/include the required data to run the simulations and optimization; simulations can take a few minutes on a standard laptop.
 
 # License
 
