@@ -172,7 +172,7 @@ parfor jj = 1:trial
         
         % Adding heterogeneity to the specified parameter
         if het_choice == "alpha"
-            dif = (alpha0/2)*sample*hetero; % Heterogeneity profile scaled by heterogeneity level 
+            dif = alpha0*sample*hetero; % Heterogeneity profile scaled by heterogeneity level 
             param_h = alpha0*ones(M,1) + dif;
             for j = 1:M
                 if param_h(j)<0 % Checking for negative entries 
@@ -180,7 +180,7 @@ parfor jj = 1:trial
                 end
             end
         elseif het_choice == "kappa"
-            dif = (kappa/2)*sample*hetero; % Heterogeneity profile scaled by heterogeneity level 
+            dif = kappa*sample*hetero; % Heterogeneity profile scaled by heterogeneity level 
             param_h = kappa*ones(M,1) + dif;
             for j = 1:M
                 if param_h(j)<0  % Checking for negative entries 
