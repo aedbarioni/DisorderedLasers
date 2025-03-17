@@ -162,11 +162,11 @@ parfor jj = 1:trial
         
         % Adding heterogeneity to the specified parameter 1
         if het_choice == "alpha"
-            param_h = alpha0*(ones(M,1)+(1/2)*dif);
+            param_h = alpha0*(ones(M,1)+dif);
         elseif het_choice == "omega"            
             param_h = omega0*ones(M,1) + dif;        
         elseif het_choice == "kappa"
-            param_h = kappa*(ones(M,1)+(1/2)*dif);            
+            param_h = kappa*(ones(M,1)+dif);            
         end
 
         if het_choice ~= "omega"
@@ -179,11 +179,11 @@ parfor jj = 1:trial
         
         % Adding heterogeneity to the specified parameter 2
         if het_choice2 == "alpha"
-            param_h2 = alpha0*(ones(M,1)+(1/2)*dif1);
+            param_h2 = alpha0*(ones(M,1)+dif1);
         elseif het_choice2 == "omega"            
             param_h2 = omega0*ones(M,1) + dif1;
         elseif het_choice2 == "kappa"
-            param_h2 = kappa*(ones(M,1)+(1/2)*dif1);            
+            param_h2 = kappa*(ones(M,1)+dif1);            
         end
 
         if het_choice2 ~= "omega"
