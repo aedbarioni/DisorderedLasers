@@ -3,7 +3,7 @@ Codes for stability analysis for delayed coupled lasers arrays with disorder int
 
 See the references below for more details.
 
-# Usage
+# Usage 
 
 - `StabilityAnalysisLK.m` : Analyses the stability of coupled lasers following the dynamics of the Lang-Kobayashi model (Eq. 1 of Ref. 1) as random disorder is continually introduced in one of the chosen parameters: linewidth enhancement factor (alpha), coupling strength (kappa), or frequency detuning (omega). We determine the stability at each level of disorder by calculating the Lyapunov exponent associated to the synchronous state where all lasers have same frequency, but can have different amplitudes and a small (constant) phase difference.
 
